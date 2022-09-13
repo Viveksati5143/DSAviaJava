@@ -7,7 +7,7 @@ public class Grading_System {
 		Scanner sc = new Scanner(System.in);
 		int marks = sc.nextInt();
 		
-		if(marks >= 90) {
+		if(marks > 90) {
 			System.out.println("Excellent");
 		}
 		else if( marks > 80) {
@@ -15,6 +15,12 @@ public class Grading_System {
 			}
 		else if(marks > 70) {
 			System.out.println("Fair");
+			}
+		else if(marks > 60) {
+			System.out.println("meets expectations");			
+		}
+		else {
+			System.out.println("below expectations");
 		}
 		
 	}
